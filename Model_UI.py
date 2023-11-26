@@ -2,8 +2,8 @@ import streamlit as st
 import pickle
 
 # Load the saved model using pickle
-# with open('final_model.pickle', 'rb') as f:
-#     model_loaded = pickle.load(f)
+with open('final_model.pickle', 'rb') as f:
+    model_loaded = pickle.load(f)
 
 # Define the layout of your app
 st.write("# Estimate your salary")
