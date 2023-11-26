@@ -1,6 +1,6 @@
 import streamlit as st
 import pickle
-import sklearn
+
 # Load the saved model using pickle
 with open('final_model.pickle', 'rb') as f:
     model_loaded = pickle.load(f)
