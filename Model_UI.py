@@ -2,8 +2,8 @@ import streamlit as st
 import pickle
 
 # Load the saved model using pickle
-with open('final_model.pickle', 'rb') as f:
-    model_loaded = pickle.load(f)
+# with open('final_model.pickle', 'rb') as f:
+#     model_loaded = pickle.load(f)
 
 # Define the layout of your app
 st.write("# Estimate your salary")
@@ -56,11 +56,11 @@ if len(rating)!=0:
 
 
 # Define the model prediction function
-def predict(jobt,loc,rating,ctype):
-    # Your prediction code goes here
-    return model_loaded.predict([[jobt,loc,rating,ctype]])
+# def predict(jobt,loc,rating,ctype):
+#     # Your prediction code goes here
+#     return model_loaded.predict([[jobt,loc,rating,ctype]])
 
 # Add a button to trigger the prediction
-if st.button("Predict"):
-    result = predict(jobt,loc,rating,ctype)
-    st.write("Estimated salary per Annum (in INR):", int(result*std_salary+mean_salary))
+# if st.button("Predict"):
+#     result = predict(jobt,loc,rating,ctype)
+#     st.write("Estimated salary per Annum (in INR):", int(result*std_salary+mean_salary))
